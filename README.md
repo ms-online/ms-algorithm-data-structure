@@ -1,1 +1,1 @@
-lesson-11:规则 3
+lesson-12:O(n^2)

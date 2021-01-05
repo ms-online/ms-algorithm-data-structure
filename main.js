@@ -1,11 +1,12 @@
-function compressBoxesTwice(boxes, boxes2) {
-  boxes.forEach(function (boxes) {
-    console.log(boxes)
-  })
+//打印数组里面所有成对的组合
+const boxes = ['a', 'b', 'c', 'd', 'e']
 
-  boxes2.forEach(function (boxes) {
-    console.log(boxes)
-  })
+function logAllPairsOfArray(array) {
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      console.log(array[i], array[j])
+    }
+  }
 }
 
-// 大O符号：O(a+ b)
+logAllPairsOfArray(boxes) //O(n^2) 平方时间复杂度
