@@ -18,4 +18,4 @@ function anotherFunChallenge(input) {
   let whoAmI = "I don't know" //O(1)
 }
 
-//大O符号：O(4 + 7n)
+//大O符号：O(n)
