@@ -1,1 +1,1 @@
-lesson-4-5:O(n)-O(1)
+lesson-10:规则 2

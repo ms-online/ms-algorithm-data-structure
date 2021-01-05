@@ -1,33 +1,17 @@
-// const nemo = ['nemo']
-// const everyone = [
-//   'dory',
-//   'bruce',
-//   'marlin',
-//   'nemo',
-//   'gill',
-//   'bloat',
-//   'nigel',
-//   'squirt',
-//   'darla',
-//   'hank',
-// ]
-// const large = new Array(100000).fill('nemo')
+function printFirstItemThenFirstHalfThenSayHi100Times(items) {
+  console.log(items[0])
 
-// function findNemo(array) {
-//   for (let i = 0; i < array.length; i++) {
-//     if (array[i] === 'nemo') {
-//       console.log('尼莫找到了！')
-//     }
-//   }
-// }
+  var middleIndex = Math.floor(items.length / 2)
+  var index = 0
 
-// findNemo(large) // O(n) 线性时间复杂度
+  while (index < middleIndex) {
+    console.log(items[index])
+    index++
+  }
 
-const boxes = [0, 1, 2, 3, 4, 5]
-
-function logFirstTwoBoxes(boxes) {
-  console.log(boxes[0]) // O(1)
-  console.log(boxes[1]) // O(1)
+  for (var i = 0; i < 100; i++) {
+    console.log('hi')
+  }
 }
 
-logFirstTwoBoxes(boxes) //O(2)
+//大O符号： O(1 + n/2 + 100) --> O(n/2 + 101) --> O( n/2 +1) --> O(n + 1) --> O(n)  线性时间复杂度
