@@ -1,33 +1,15 @@
-// const nemo = ['nemo']
-// const everyone = [
-//   'dory',
-//   'bruce',
-//   'marlin',
-//   'nemo',
-//   'gill',
-//   'bloat',
-//   'nigel',
-//   'squirt',
-//   'darla',
-//   'hank',
-// ]
-// const large = new Array(100000).fill('nemo')
+//随堂练习（一） ：推导下方函数的大O符号（可以一行一行判断）
+function funChallenge(input) {
+  let a = 10 //O(1)
+  a = 50 + 3 //O(1)
 
-// function findNemo(array) {
-//   for (let i = 0; i < array.length; i++) {
-//     if (array[i] === 'nemo') {
-//       console.log('尼莫找到了！')
-//     }
-//   }
-// }
-
-// findNemo(large) // O(n) 线性时间复杂度
-
-const boxes = [0, 1, 2, 3, 4, 5]
-
-function logFirstTwoBoxes(boxes) {
-  console.log(boxes[0]) // O(1)
-  console.log(boxes[1]) // O(1)
+  for (let i = 0; i < input.length; i++) {
+    //O(n)
+    anotherFunction() //O(n)
+    let stranger = true //O(n)
+    a++ //O(n)
+  }
+  return a //O(1)
 }
 
-logFirstTwoBoxes(boxes) //O(2)
+// 大O符号：3 + 4n --> O(3+4n) --> O(n)
