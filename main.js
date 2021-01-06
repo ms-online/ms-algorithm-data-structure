@@ -1,11 +1,17 @@
-function compressBoxesTwice(boxes, boxes2) {
-  boxes.forEach(function (boxes) {
-    console.log(boxes)
+function printAllNumbersThenAllPairSums(numbers) {
+  console.log('数字有：')
+  numbers.forEach(function (number) {
+    console.log(number)
   })
 
-  boxes2.forEach(function (boxes) {
-    console.log(boxes)
+  console.log('每对数字之和为：')
+  numbers.forEach(function (firstNumber) {
+    numbers.forEach(function (secondNumber) {
+      console.log(firstNumber + secondNumber)
+    })
   })
 }
 
-// 大O符号：O(a+ b)
+printAllNumbersThenAllPairSums([1, 2, 3, 4, 5])
+
+//大O符号： O(n^2) 平方时间复杂度
