@@ -1,17 +1,18 @@
-function printAllNumbersThenAllPairSums(numbers) {
-  console.log('数字有：')
-  numbers.forEach(function (number) {
-    console.log(number)
-  })
-
-  console.log('每对数字之和为：')
-  numbers.forEach(function (firstNumber) {
-    numbers.forEach(function (secondNumber) {
-      console.log(firstNumber + secondNumber)
-    })
-  })
+function sayHello(array) {
+  for (let i = 0; i < array.length; i++) {
+    console.log('Hello')
+  }
 }
 
-printAllNumbersThenAllPairSums([1, 2, 3, 4, 5])
+sayHello([1, 2, 3, 4, 5]) //O(1) 常数空间复杂度
 
-//大O符号： O(n^2) 平方时间复杂度
+function arrayOfHiTiems(n) {
+  var hiArray = []
+
+  for (let i = 0; i < n; i++) {
+    hiArray[i] = 'hi'
+  }
+  console.log(hiArray)
+}
+
+arrayOfHiTiems(6) //O(n) 线性空间复杂度
