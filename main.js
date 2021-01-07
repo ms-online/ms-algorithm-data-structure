@@ -1,18 +1,25 @@
-function sayHello(array) {
-  for (let i = 0; i < array.length; i++) {
-    console.log('Hello')
-  }
-}
+//找到最新的博客，最老的博客
+// const array = ['hello', 'world', 'blog']
 
-sayHello([1, 2, 3, 4, 5]) //O(1) 常数空间复杂度
+// array[0]; //O(1)
+// array[array.length - 1]; //O(1)
 
-function arrayOfHiTiems(n) {
-  var hiArray = []
+//对比博客发布时间
+// const array = [
+//   {
+//     body: 'hello',
+//     time: 2018,
+//   },
+//   {
+//     body: 'world',
+//     time: 2019,
+//   },
+//   {
+//     body: 'blog',
+//     time: 2020,
+//   },
+// ]
 
-  for (let i = 0; i < n; i++) {
-    hiArray[i] = 'hi'
-  }
-  console.log(hiArray)
-}
+// //时间复杂度：O(n^2)
 
-arrayOfHiTiems(6) //O(n) 线性空间复杂度
+console.log('sadfsdfasnkdlfjsa'.length) //O(1)
